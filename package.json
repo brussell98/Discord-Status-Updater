@@ -1,6 +1,6 @@
 {
 	"name": "discord status updater",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A Discord status updater using discord.js",
 	"author": "brussell98",
 	"main": "Status-Updater.js",

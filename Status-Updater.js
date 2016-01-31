@@ -11,12 +11,13 @@ bot.on("ready", function() {
 	console.log("Press Ctrl+D to exit");
 
 	var rl = readline.createInterface(process.stdin, process.stdout);
-	
+
 	rl.setPrompt("Status> ");
 	rl.prompt();
 
 	rl.on("line", function(line) {
-		bot.setPlayingGame(line);
+		if (line.trim() == "") { bot.setPlayingGame(null);
+		} else { bot.setPlayingGame(line); }
 		rl.prompt();
 	}).on("close", function() {
 		console.log("Bye!");
