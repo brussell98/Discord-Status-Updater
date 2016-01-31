@@ -77,3 +77,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+jsconfig.json
+*.jscsrc
+typings/
+typings.json
