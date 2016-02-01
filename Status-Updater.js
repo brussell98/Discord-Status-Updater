@@ -6,7 +6,7 @@ try { var config = require("./config.json");
 
 var bot = new discord.Client();
 
-bot.on("ready", function() {
+bot.on("ready", () => {
 	console.log("Discord Status Updater ready to use! Logged in as " + bot.user.username);
 	console.log("Press Ctrl+D to exit");
 
@@ -15,17 +15,17 @@ bot.on("ready", function() {
 	rl.setPrompt("Status> ");
 	rl.prompt();
 
-	rl.on("line", function(line) {
+	rl.on("line", (line) => {
 		if (line.trim() == "") { bot.setPlayingGame(null);
 		} else { bot.setPlayingGame(line); }
 		rl.prompt();
-	}).on("close", function() {
-		console.log("Bye!");
+	}).on("close", () => {
+		console.log("\nLogged out");
 		process.exit(0);
 	});
 });
 
-bot.on("disconnected", function() { console.log("Lost connection to discord"); process.exit(0); });
+bot.on("disconnected", () => { console.log("\nLost connection to discord"); process.exit(0); });
 
 if (config.email && config.password) { bot.login(config.email, config.password);
 } else {
