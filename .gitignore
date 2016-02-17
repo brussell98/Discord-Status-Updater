@@ -82,4 +82,4 @@ jsconfig.json
 *.jscsrc
 typings/
 typings.json
-.eslintrc
+*.eslintrc
