@@ -21,5 +21,11 @@ Now just open `run.bat` or run `node Status-Updater.js --harmony`
 
 ## Extra Features:
 
->Automatic detection for MPC-HC (Windows only)   
->To enable/disable this type `auto`
+Automatic detection for MPC-HC (Windows only)   
+To enable/disable this type `auto`   
+   
+__If you want a player added follow these steps:__   
+1. Make sure the video player puts the filename in the window title   
+2. Contact me on Discord or make an issue and state these things:   
+> Name of the executable (ex: `mpc-hc.exe`) (case sensitive)   
+> The format of the title (ex: `VLC - File Name`)   
