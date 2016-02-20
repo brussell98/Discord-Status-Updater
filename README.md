@@ -1,4 +1,6 @@
-# Discord Status Updater
+# Discord Status Updater (OUTDATED)
+
+## This project has continued here: https://github.com/brussell98/AutoDiscord
 
 A status updater for Discord using NodeJS and [Discord.js](https://github.com/hydrabolt/discord.js/).
 
